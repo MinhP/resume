@@ -13,7 +13,7 @@ if [ -f "./artifacts/$OUTPUT.pdf" ]; then
 	OUTPUT="resume-$(date -I)_$i"
 fi
 
-pandoc --pdf-engine=wkhtmltopdf -s -c github-markdown.css -f gfm resume.md -o ./artifacts/$OUTPUT.pdf \
+pandoc --pdf-engine=wkhtmltopdf -s -c github-markdown-light.css -f gfm resume.md -o ./artifacts/$OUTPUT.pdf \
     -V margin-top=10 \
     -V margin-left=10 \
     -V margin-right=10 \
